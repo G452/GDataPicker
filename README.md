@@ -181,7 +181,24 @@
     }
     
     
-4、最后记得页面销毁时同时销毁View
+4、点击事件
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case com.g2452.www.gdatepickerlib.R.id.ll_date:
+                // 日期格式为yyyy-MM-dd
+                mDatePicker.show(mTvSelectedDate.getText().toString());
+                break;
+            case com.g2452.www.gdatepickerlib.R.id.ll_time:
+                // 日期格式为yyyy-MM-dd HH:mm
+                mTimerPicker.show(mTvSelectedTime.getText().toString());
+                break;
+        }
+    }
+    
+    
+5、最后记得页面销毁时同时销毁View
 
 
       @Override
