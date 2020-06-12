@@ -15,6 +15,7 @@
 2、主moudel的build中添加
 
   implementation 'com.github.G452:GDataPicker:0.0.2'
+  implementation 'com.github.G452:GDataPicker:0.0.3'//AndroidX用户
   
 3、点击Sync Now刷新编译
 
