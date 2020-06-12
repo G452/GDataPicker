@@ -1,7 +1,7 @@
 package com.g2452.www.gdatepicker;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -31,11 +31,11 @@ public class MainActivity  extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case com.g2452.www.gdatepickerlib.R.id.ll_date:
+            case  R.id.ll_date:
                 // 日期格式为yyyy-MM-dd
                 mDatePicker.show(mTvSelectedDate.getText().toString());
                 break;
-            case com.g2452.www.gdatepickerlib.R.id.ll_time:
+            case  R.id.ll_time:
                 // 日期格式为yyyy-MM-dd HH:mm
                 mTimerPicker.show(mTvSelectedTime.getText().toString());
                 break;
